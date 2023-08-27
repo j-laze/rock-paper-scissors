@@ -1,7 +1,7 @@
 @font-face {
     font-family:"Takota";
-    src: url('../fonts/Takota-7LRl.otf');
-    src: url('../Takota-BRa8.ttf') format("truetype");
+    src: url('../fonts/Takota-7LRl.otf') format("opentype");
+    src: url('../fonts/Takota-BRa8.ttf') format("truetype");
     
 }
 
