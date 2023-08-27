@@ -1,0 +1,159 @@
+@font-face {
+    font-family:"Takota";
+    src: url(/fonts/Takota-7LRl.otf);
+    src: url(/fonts/Takota-BRa8.ttf) format("truetype");
+    
+}
+
+
+
+html {
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+ .main-heading {
+    text-align: center;
+    font-family: 'Takota';
+    font-size: calc(6vh + 20px + 3vw);
+    color: #f6ebe5;
+    margin-top: 1vh;
+    margin-bottom:0;
+
+
+    
+ }
+
+ .main-body{
+    background-image:url('/images/empty-blackboard.jpg') ;
+    background-size: cover;
+    background-position: center center;
+    max-height: 100%;
+    margin: 0;
+    
+ }
+
+
+
+ .main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    
+    
+   
+  
+ }
+
+ .button-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2vw;
+    margin-top:0vh;
+    flex-grow: 1;
+    margin-bottom:1vh;
+ }
+
+ 
+ .footer-thing{
+   margin-top:1.5vh ;
+   display: flex;
+   max-height: 100%;
+   
+ }
+
+ .scoreTextBold{
+   font-weight: bold;
+   letter-spacing: 0.05em;
+ }
+
+ .choice-button{
+    flex: auto;
+    font-family: 'Takota';
+    font-size: calc(6vw + 2vh);
+    color: #f6ebe5;
+    background-color: #31343a;
+    border-radius: 30px;
+    padding-inline: calc(1vw + 1vh);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    
+    transition: transform 0.03s ease-in-out;
+
+    
+ }
+
+ .result{
+    font-family: 'Takota';
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: calc(1vw + 0.1vh + 20px);
+ }
+
+ .result-container{
+   min-height: calc(3.3vw + 0.2vh + 20px);
+  
+ }
+
+ .computer-choice{
+   font-size: calc(1vw + 0.1vh + 20px);
+   font-family: 'Takota';
+   margin: 0;
+ }
+
+ .score{
+   font-family: 'Takota';
+   font-size: calc(1vw + 0.1vh + 20px);
+   margin-bottom: 0vh;
+   margin-top: 0;
+   
+ }
+
+
+
+ .grow {
+   font-size: calc(2vw + 0.2vh + 20px);
+   transition: font-size 0.5s ease-in-out;
+ }
+
+ .shrink {
+   font-size: 0em;
+   transition: font-size 0.5s ease-in-out;
+ }
+ 
+ .reset-button {
+    flex: auto;
+    font-family: 'Takota';
+    font-size: calc(2vw + 0.2vh + 20px);
+    padding: calc(1vw + 1vh);
+    padding-right:calc(1vw + 1vh + 12px); ;
+    color: #f6ebe5;
+    background-color: #31343a;
+    border-radius: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.04s ease-in-out;
+ }
+
+ .reset-button:hover{
+    background-color: black;
+ }
+
+
+ .reset-button:active {
+    transition: transform 0.1s;
+    transform: scale(0.95);
+  }
+ .choice-button:hover{
+    background-color: rgb(125, 56, 56);
+
+ }
+ .choice-button:active{
+    transform: scale(0.95);
+ }

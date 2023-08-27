@@ -3,57 +3,34 @@
 
 <head>
     <title>Page Title</title>
-    <script>
-
-        const option = ['rock', 'paper', 'scissors'];
-
-        const getComputerChoice = () => option[Math.floor(Math.random() * option.length)];
-
-
-        function playRound(playerSelection, computerSelection) {
-            const cleanedPlayerSelection = playerSelection.toLowerCase();
-            switch (computerSelection) {
-
-                case 'rock':
-                    if (cleanedPlayerSelection === 'rock') return 'draw' 
-
-                    if (cleanedPlayerSelection === 'paper') return 'win'    
-
-                    if (cleanedPlayerSelection === 'scissors') return 'lose'
-
-                case 'paper': 
-                    if (cleanedPlayerSelection === 'paper') return 'draw'
-
-                    if (cleanedPlayerSelection === 'scissors') return 'win'
-
-                    if (cleanedPlayerSelection ===  'rock') return 'lose'
-
-                case 'scissors' : 
-                    if (cleanedPlayerSelection === 'scissors') return 'draw'
-
-                    if (cleanedPlayerSelection === 'rock') return 'win'
-
-                    if (cleanedPlayerSelection === 'paper') return 'lose'
-                 }
-        }
-
-        function game(){
-            for (let i = 0; i< 5; i++){
-                console.log(playRound(prompt("please enter rock paper scissors", 'enter'), getComputerChoice()))          }
-        }
-
-    
-
-        game()
-
-
-
-    </script>
+    <link rel="stylesheet" href="css\index.css">
+ 
 </head>
 
-<body>
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
+<body class = "main-body">
+    <h1 class="main-heading">Rock Paper Scissors!</h1>
+    <div class = "main-container">
+        <h2 class = 'computer-choice'>Press a button to start!</h2>
+        <div class = 'result-container'>
+        <h2 class = "result">
+            
+        </h2></div>
+    <div class = 'score'>First to win 5 rounds is the winner!</div>
+        
+        <div class = 'button-container'>
+            <button id="rock" class = 'choice-button' onmousedown="mouseDownSoundEffect()" onmouseup="mouseUpSoundEffect()">Rock</button>
+            
+            <button id="paper" class = 'choice-button'onmousedown="mouseDownSoundEffect()" onmouseup="mouseUpSoundEffect()">Paper</button>
+            
+            <button id="scissors" class = 'choice-button'onmousedown="mouseDownSoundEffect()" onmouseup="mouseUpSoundEffect()">Scissors</button>
+        
+        </div>
+        <div class = 'footer-thing'>
+            <button class = 'reset-button' onmousedown="mouseDownSoundEffect()" onmouseup="mouseUpSoundEffect()">Reset</button>
+        </div>
+    </div>
+  
+    <script src="js\scripts.js"></script>
 </body>
 
 </html>
