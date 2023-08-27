@@ -1,7 +1,7 @@
 @font-face {
     font-family:"Takota";
-    src: url(fonts/Takota-7LRl.otf);
-    src: url(fonts/Takota-BRa8.ttf) format("truetype");
+    src: url('/fonts/Takota-7LRl.otf');
+    src: url('/fonts/Takota-BRa8.ttf') format("truetype");
     
 }
 
@@ -28,7 +28,7 @@ html {
  }
 
  .main-body{
-    background-image:url('images/empty-blackboard.jpg') ;
+    background-image:url('/images/empty-blackboard.jpg') ;
     background-size: cover;
     background-position: center center;
     max-height: 100%;
