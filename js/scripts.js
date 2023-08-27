@@ -61,13 +61,13 @@ function userSelection() {
 
 
 function mouseUpSoundEffect(){
-    const sound = new Audio('/sound/button-off.wav');
+    const sound = new Audio('sound/button-off.wav');
     sound.play();
 
 }
 
 function mouseDownSoundEffect(){
-    const sound = new Audio('/sound/button-on.wav');
+    const sound = new Audio('sound/button-on.wav');
     sound.play();
 
 }
@@ -80,7 +80,7 @@ function updateComputersChoice(computerSelectionHere){
         computerChoice.textContent = option[currentIndex];
         currentIndex = (currentIndex + 1) % option.length;
         intervalTime = intervalTime * 1.3;
-        const clickSound = new Audio('/sound/clickingsound.mp3');
+        const clickSound = new Audio('sound/clickingsound.mp3');
         clickSound.play();
     
         
@@ -146,13 +146,13 @@ function displayEnd(){
     if(computerScoreCount === 5){
    resultText.textContent = 'Oh no you lose :(';
    resultText.style.color = '#D2122E'
-   const sound = new Audio('/sound/lose.mp3');
+   const sound = new Audio('sound/lose.mp3');
    sound.play();
    scoreText.textContent = "Hit reset to play again!";}
    else if(playerScoreCount ===5){
     resultText.textContent = 'You are the winner :)!'
     resultText.style.color = '#66FF00'
-    const sound = new Audio('/sound/win.mp3');
+    const sound = new Audio('sound/win.mp3');
     sound.play();
     scoreText.textContent = "press reset to play again!";}
     scoreText.classList.add('scoreTextBold')
@@ -180,7 +180,7 @@ function startGame() {
      
 
 
-    //console.log(playerScoreCount);
+   
 }
 
 
